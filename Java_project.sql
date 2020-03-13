@@ -1,0 +1,69 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.6
+-- https://www.phpmyadmin.net/
+--
+-- 主機: localhost
+-- 產生時間： 2019-06-22 13:30:21
+-- 伺服器版本: 5.7.17-log
+-- PHP 版本： 5.6.30
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- 資料庫： `java_project`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `INFO`
+--
+
+CREATE TABLE `ROLES` (
+  `PLACE_NUMBER` int(10) NOT NULL,
+  `LAND_PRICE` int(10) NOT NULL,
+  `TOLLS` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- 資料表的匯出資料 `ROLES`
+--
+
+INSERT INTO `ROLES` (`PLACE_NUMBER`, `LAND_PRICE`, `TOLLS`) VALUES
+(1,300,30),
+(2,400,40),
+(3,500,50),
+(4,600,60),
+(6,700,70),
+(7,800,80),
+(8,900,90),
+(9,1000,100),
+(11,1100,110),
+(12,1200,120),
+(13,1300,130),
+(14,1400,140),
+(16,1500,150),
+(17,1600,170),
+(18,1800,180),
+(19,2000,200);
+
+--
+-- 已匯出資料表的索引
+--
+
+--
+-- 資料表索引 `ROLES`
+--
+ALTER TABLE `ROLES`
+  ADD PRIMARY KEY (`PLACE_NUMBER`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
